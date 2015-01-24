@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Advanced CSS</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+<!-- ------------------ INTRO ------------------ -->
+
+  <section class="slide intro">
+    <header class="header">
+      <h1>Advanced CSS</h1>
+      <button class="next">▶</button>
+    </header>
+    <div class="content">
+      <p>by <strong>Arnau March</strong></p>
+      <p>UX/UI developer</p>
+      <p>Twitter/github <strong>@rnowm</strong></p>
+    </div>
+    <footer>
+      <p>Slides and exercices:</p>
+      <p>
+        <a href="http://rnowm/github.io/advancedCSS">
+          http://rnowm/github.io/advancedCSS
+        </a>
+      </p>
+      <p>
+        <a href="https://github.com/rnowm/advancedCSS">
+          https://github.com/rnowm/advancedCSS
+        </a>
+      </p>
+    </footer>
+  </section>
+
+<!-- ------------------ Flexbox ------------------ -->
+
+  <section class="slide">
+    <header class="header">
+      <button class="prev">◀</button>
+      <h1>Flexbox</h1>
+      <button class="next">▶</button>
+    </header>
+    <div class="wrapper">
+      <section class="content">
+        <ul class="demo demo-1">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ul>
+      </section>
+
+      <code>
+        <style contenteditable="" spellcheck="false">
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+</ul>
+        </style>
+      </code>
+    </div>
+  </section>
+
+
+<!-- ------------------ OVERVIEW ------------------ -->
+
+  <section class="slide">
+    <header class="header">
+      <button class="prev">◀</button>
+      <h1>Overview</h1>
+      <button class="next">▶</button>
+    </header>
+    <div class="wrapper">
+      <section class="content">
+        <ul class="demo demo-1">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ul>
+      </section>
+
+      <code>
+        <style contenteditable="" spellcheck="false">
+.demo-1 {
+  //display: flex;
+  //flex-direction: column;
+}
+
+.demo-1 li {
+  //flex: 1;
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+}
+        </style>
+      </code>
+    </div>
+  </section>
+
+<!-- ------------------ ORDER ------------------ -->
+
+  <section class="slide">
+    <header class="header">
+      <button class="prev">◀</button>
+      <h1>Order</h1>
+      <button class="next">▶</button>
+    </header>
+    <div class="wrapper">
+      <section class="content">
+        <ul class="demo demo-2">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ul>
+      </section>
+
+      <code>
+        <style class="editable" contenteditable="" spellcheck="false">
+.demo-2 {
+  display: flex;
+  flex-direction: column;
+  //flex-direction: column-reverse;
+  //flex-direction: row-reverse;
+}
+
+.demo-2 li:nth-child(1) {
+  //order: 1;
+}
+.demo-2 li:nth-child(2) {
+  //order: 2;
+}
+        </style>
+      </code>
+    </div>
+  </section>
+
+<!-- ------------------ WRAP ------------------ -->
+
+  <section class="slide">
+    <header class="header">
+      <button class="prev">◀</button>
+      <h1>Wrap</h1>
+      <button class="next">▶</button>
+    </header>
+    <div class="wrapper">
+      <section class="content">
+        <ul class="demo demo-3">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ul>
+      </section>
+
+      <code>
+        <style class="editable" contenteditable="" spellcheck="false">
+.demo-3 {
+  display: flex;
+  flex-wrap: no-wrap;
+  //flex-wrap: wrap;
+  //flex-wrap: wrap-reverse;
+}
+
+.demo-3 li {
+  width: 300px;
+}
+        </style>
+      </code>
+    </div>
+  </section>
+
+<!-- ------------------ CONTAINER ALIGNMENT ------------------ -->
+
+  <section class="slide">
+    <header class="header">
+      <button class="prev">◀</button>
+      <h1>Container Alignment</h1>
+      <button class="next">▶</button>
+    </header>
+    <div class="wrapper">
+      <section class="content">
+        <ul class="demo demo-4 heights">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ul>
+      </section>
+
+      <code>
+        <style class="editable" contenteditable="" spellcheck="false">
+.demo-4 {
+  height: 400px;
+  display: flex;
+  justify-content: flex-start;
+  //justify-content: center;
+  //justify-content: flex-end;
+  //justify-content: space-around;
+  //justify-content: space-between;
+
+  align-items: flex-start;
+  //align-items: center;
+  //align-items: flex-end;
+  //align-items: baseline;
+
+  //flex-direction: column;
+
+  flex-wrap: wrap;
+  align-content: flex-start;
+  //align-content: center;
+  //align-content: flex-end;
+  //align-content: space-around;
+  //align-content: space-between;
+}
+
+.demo-4 li {
+  //width: 200px;
+}
+        </style>
+      </code>
+    </div>
+  </section>
+
+<!-- ------------------ ITEM ALIGNMENT ------------------ -->
+
+  <section class="slide">
+    <header class="header">
+      <button class="prev">◀</button>
+      <h1>Item Alignment</h1>
+      <button class="next">▶</button>
+    </header>
+    <div class="wrapper">
+      <section class="content">
+        <ul class="demo demo-5 centered">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ul>
+      </section>
+
+      <code>
+        <style class="editable" contenteditable="" spellcheck="false">
+.demo-5 {
+  height: 400px;
+  display: flex;
+  //flex-direction: column;
+}
+
+.demo-5 li:nth-child(2){
+  align-self: flex-start;
+  //align-self: center;
+  //align-self: flex-end;
+}
+        </style>
+      </code>
+    </div>
+  </section>
+
+<!-- ------------------ DIMENSIONS (GROW) ------------------ -->
+
+  <section class="slide">
+    <header class="header">
+      <button class="prev">◀</button>
+      <h1>Dimensions (Grow) </h1>
+      <button class="next">▶</button>
+    </header>
+    <div class="wrapper">
+      <section class="content">
+        <ul class="demo demo-6">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ul>
+      </section>
+
+      <code>
+        <style class="editable" contenteditable="" spellcheck="false">
+.demo-6 {
+  height: 400px;
+  display: flex;
+  //flex-direction: column;
+}
+
+.demo-6 li {
+  //flex: 1;
+}
+
+.demo-6 li:nth-child(2){
+  //flex: 1;
+}
+
+.demo-6 li:nth-child(3){
+  //flex: 2;
+}
+        </style>
+      </code>
+    </div>
+  </section>
+
+<!-- ------------------ DIMENSIONS (BASIS) ------------------ -->
+
+  <section class="slide">
+    <header class="header">
+      <button class="prev">◀</button>
+      <h1>Dimensions (Basis) </h1>
+      <button class="next">▶</button>
+    </header>
+    <div class="wrapper">
+      <section class="content">
+        <ul class="demo demo-6">
+          <li>Item 1</li>
+          <li>Laaaaaaaaaaaaarge Item</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ul>
+      </section>
+
+      <code>
+        <style class="editable" contenteditable="" spellcheck="false">
+.demo-6 {
+  height: 400px;
+  display: flex;
+  //flex-direction: column;
+}
+
+.demo-6 li {
+  flex: 1;
+  //flex: 1 auto;
+}
+        </style>
+      </code>
+    </div>
+  </section>
+
+<!-- ------------------ LAYOUT (DESKTOP) ------------------ -->
+
+  <section class="slide">
+    <header class="header">
+      <button class="prev">◀</button>
+      <h1>Layout (Desktop) </h1>
+      <button class="next">▶</button>
+    </header>
+    <div class="wrapper">
+      <section class="content">
+        <div class="demo-7">
+          <header>header</header>
+          <section>
+            <aside>menu</aside>
+            <article>content</article>
+          </section>
+          <footer>footer</footer>
+        </div>
+      </section>
+
+      <code>
+        <style class="editable" contenteditable="" spellcheck="false">
+.demo-7 {
+  border: 2px dashed black;
+  box-sizing: border-box;
+  height: 100%;
+  color: #fff;
+  //display: flex;
+  //flex-direction: column;
+}
+
+.demo-7 section {
+  //flex: 1;
+  //display: flex;
+}
+
+.demo-7 article {
+  background: grey;
+  //flex: 1;
+}
+
+.demo-7 aside {
+  background: green;
+  //order: 1;
+}
+
+.demo-7 header {
+  background: red;
+}
+
+.demo-7 footer {
+  background: blue;
+}
+        </style>
+      </code>
+    </div>
+  </section>
+
+<!-- ------------------ LAYOUT (MOBILE) ------------------ -->
+
+  <section class="slide">
+    <header class="header">
+      <button class="prev">◀</button>
+      <h1>Layout (Mobile) </h1>
+    </header>
+    <div class="wrapper">
+      <section class="content">
+        <div class="demo-8">
+          <header>header</header>
+          <section>
+            <aside>menu</aside>
+            <article>content</article>
+          </section>
+          <footer>footer</footer>
+        </div>
+      </section>
+
+      <code>
+        <style class="editable" contenteditable="" spellcheck="false">
+.demo-8 {
+  border: 2px dashed black;
+  box-sizing: border-box;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.demo-8 section {
+  flex: 1;
+  display: flex;
+  //flex-direction: column;
+}
+
+.demo-8 article {
+  background: grey;
+  flex: 1;
+}
+
+.demo-8 aside {
+  background: green;
+}
+
+.demo-8 header {
+  background: red;
+}
+
+.demo-8 footer {
+  background: blue;
+}
+        </style>
+      </code>
+    </div>
+  </section>
+</body>
+</html>
