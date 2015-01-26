@@ -19,6 +19,21 @@ ul {
   list-style: none;
 }
 
+ol {
+  counter-reset: section;
+  list-style-type: none;
+}
+
+ol > li:after {
+  counter-increment: section;
+  content: counters(section,".") " ";
+  position: fixed;
+  bottom: 5px;
+  right: 7px;
+  font-size: 16px;
+  color: #aaa;
+}
+
 p {
   margin: 0 0 20px;
 }
@@ -74,6 +89,10 @@ header button:hover {
   font-size: 40px;
 }
 
+li:last-child header button.next {
+  display: none;
+}
+
 .wrapper {
   display: flex;
   padding: 40px;
@@ -85,8 +104,23 @@ header button:hover {
   overflow: auto;
 }
 
+.content img {
+  width: 100%;
+}
+
+figure {
+  width: 60%; margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
 .intro .content,
-.intro footer {
+.slide > footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,9 +133,10 @@ header button:hover {
   font-weight: normal;
 }
 
-.intro a {
+.slide > footer a {
   color: #333;
   font-weight: normal;
+  line-height: 30px;
 }
 
 .demo {
@@ -130,6 +165,52 @@ header button:hover {
 .demo.heights li:nth-child(3) {
   height: 120px;
   padding-top: 40px;
+}
+
+.demo-mobile {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.demo-mobile > header {
+  background: #aaa;
+  color: #fff;
+  height: 30px;
+  line-height: 30px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.demo-mobile section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 20px;
+  overflow: auto;
+}
+
+.demo-mobile section header {
+  padding: 0 20px;
+  margin: 0 -20px;
+  border-bottom: 1px solid #333;
+}
+
+.demo-mobile ul {
+  margin: 20px 0;
+  line-height: 30px;
+}
+
+.blend {
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/8959572482_2601c86c04_c.jpg);
+  background-size: cover;
 }
 
 code {
