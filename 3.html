@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Basic HTML & CSS</title>
+  <link rel="stylesheet" href="css/rcomponents.min.css">
+  <link rel="stylesheet" href="css/demo.css">
+  <style>
+    button {
+      border-radius: 4px;
+      font-size: 14px;
+      padding: 10px 20px;
+      border: none;
+      color: white;
+    }
+    .demo-button {
+      background: orange;
+    }
+  </style>
+</head>
+
+  <body>
+    <header>
+      <h1>CSS</h1>
+      <p>Where do I write my styles?</p>
+    </header>
+    <section>
+      <h2>Inline (you must not):</h2>
+      <code>
+        <style>
+      <button style="background: red">Inline styles</button>
+        </style>
+      </code>
+      <button style="background: red">Inline styles</button>
+      
+      <h2>Embedded (you shouldn't):</h2>
+      <code>
+        <style>
+      <head>
+        <style>
+          .demo-button {
+            background: orange;
+          }
+        ...
+      <button class="demo-button">Embedded styles</button>
+        </style>
+      </code>
+      <button class="demo-button">Embedded styles</button>
+      
+      <h2>Linked (yes please!):</h2>
+      <code>
+        <style>
+      <head>
+        <link rel="stylesheet" href="css/demo.css">
+      ...
+      <button class="demo-button-2">Linked styles</button>
+        </style>
+      </code>
+      <button class="demo-button-2">Linked styles</button>
+    </section>
+    
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

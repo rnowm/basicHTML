@@ -1,0 +1,72 @@
+/* Common styles */
+header {
+  text-align: center;
+}
+
+section {
+  padding: 20px 100px;
+}
+
+code {
+  display: block;
+  overflow: hidden;
+}
+
+small {
+  margin-bottom: -10px;
+  color: #0086B3;
+}
+small + style {
+  margin-top: 0;
+}
+
+style {
+  display: block;
+  white-space: pre;
+  color: #0086B3;
+  border: 1px solid #cfcece;
+  background: #f2f2f2;
+  margin: 10px 0 20px;
+  line-height: 25px;
+  overflow-y: auto;
+  border-radius: 4px;
+}
+
+style:focus {
+  outline: 0;
+  border: 1px solid #0086B3;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 40px 0 10px;
+  font-weight: normal;
+}
+
+button {
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* styles for 3.html */
+.demo-button-2 {
+  background: green;
+  color: white;
+}
+
+/* styles for 4.html */
+.demo-4 {
+  padding: 10px 20px;
+}
+
+/* styles for 5.html */
+.demo-5 {
+  padding: 10px 20px;
+  border-width: 3px;
+  border-style: solid;
+}
+
+/* styles for 6.html */
+.demo-6 {
+}
