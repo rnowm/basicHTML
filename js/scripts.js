@@ -18,7 +18,7 @@ document.onkeydown = function(e) {
   if (e.target.nodeName != 'STYLE') {
     if (e.keyCode === 39) {
       e.preventDefault();
-      if (currentPage < 9) {
+      if (currentPage < 10) {
         window.location.replace((currentPage + 1) + '.html');
       }
     }

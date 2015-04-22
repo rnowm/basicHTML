@@ -1,0 +1,9 @@
+body {
+  background: url("../images/excercice.png") no-repeat;
+}
+
+header {
+  width: 200px;
+  height: 30px;
+  background: red;
+}

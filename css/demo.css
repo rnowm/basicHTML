@@ -37,16 +37,36 @@ style:focus {
   border: 1px solid #0086B3;
 }
 
-h2 {
+section > h2 {
   font-size: 20px;
   margin: 40px 0 10px;
   font-weight: normal;
 }
 
-button {
+body:not(.first-demo) button {
   border: none;
   border-radius: 4px;
   font-size: 14px;
+}
+
+/* styles for 1.html */
+.inline > * {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* styles for 2.html */
+.demo-button-1 {
+  background: #007486;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.demo-button-1:hover {
+  background: #005e6d;
 }
 
 /* styles for 3.html */
@@ -56,8 +76,9 @@ button {
 }
 
 /* styles for 4.html */
-.demo-4 {
+.demo_4 button {
   padding: 10px 20px;
+  margin-right: 10px;
 }
 
 /* styles for 5.html */
